@@ -13,5 +13,11 @@ print(((x%1000)//10)+((y%1000)//10))
 
 z = 13.42
 v = 42.13
+print(int(z) == int((v-int(v))*100) and round(z%int(z)*100) == int(v))  # решение
 
-print(int(z//1) == round((v-int(v))*100) or round(z-int(z))*100 == int(v//1))
+print(int(z//1) == round((v-int(v))*100) and round(z-int(z))*100 == int(v//1))    # пробовал другим способ решить
+
+print(int(z//1) == round((v-int(v))*100) and int(v) == int(v//1))   # вроде тоже верное решение
+
+
+
